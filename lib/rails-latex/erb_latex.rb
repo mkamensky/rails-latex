@@ -6,7 +6,7 @@ require 'action_view'
 module ActionView               # :nodoc: all
   module Template::Handlers
     class ERBLatex < ERB
-      def self.call(template)
+      def self.call(template, source)
         new.compile(template)
       end
 
